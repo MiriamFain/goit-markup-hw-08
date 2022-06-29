@@ -1,0 +1,15 @@
+.title {
+  @include font(null, 36px, 1.16, 0.03em);
+
+  text-align: center;
+  color: $title-text-color;
+  padding-bottom: 50px;
+}
+
+.title--hero {
+  margin-bottom: 30px;
+
+  @include font(900, 44px, 1.36, 0.06em);
+  text-transform: uppercase;
+  color: $first-contrast-text-color;
+}

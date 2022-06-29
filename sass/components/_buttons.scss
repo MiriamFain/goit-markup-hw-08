@@ -1,0 +1,66 @@
+.button {
+  border-radius: 4px;
+  border: 0px;
+  color: $first-contrast-text-color;
+  background-color: $accent-color;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+
+.button.primary {
+  @extend %align-list
+  font-weight: 700;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: auto;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color-dark;
+  }
+}
+
+.button-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.button.secondary {
+  color: $title-text-color;
+  background-color: rgba(245, 244, 250, 1);
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+}
+
+.button-list .current-btn,
+.button.secondary:hover,
+.button.secondary:focus {
+  color: $first-contrast-text-color;
+  background-color: $accent-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms;
+}
+
+.button-list .btn + .btn {
+  margin-left: 8px;
+}
+
+.button.form-btn {
+  @extend .button.primary
+  padding: 10px 55px;
+  margin-bottom: 40px;
+}

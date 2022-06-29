@@ -1,0 +1,26 @@
+.work {
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__text {
+    display: flex;
+    width: 370px;
+    position: absolute;
+    bottom: 0;
+
+    @include font(700, 14px, 1.14, 0.03em);
+
+    text-transform: uppercase;
+
+    color: $first-contrast-text-color;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}

@@ -1,0 +1,46 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $primary-bg-color;
+  color: $text-color;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team {
+  background-color: $section-bg-color;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.features {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.footer {
+  padding-bottom: 60px;
+  background-color: $dark-bg-color;
+}

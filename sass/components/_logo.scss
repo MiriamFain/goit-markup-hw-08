@@ -1,0 +1,20 @@
+.logo {
+  margin: 24px 93px 24px 0;
+  font-family: "Raleway", sans-serif;
+  @include font(700, 24px, 1.42, 0.03em);
+
+  color: $accent-color;
+
+  &__accent {
+    color: $title-text-color;
+  }
+
+  &--footer {
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  &__accent-footer {
+    color: $first-contrast-text-color;
+  }
+}
