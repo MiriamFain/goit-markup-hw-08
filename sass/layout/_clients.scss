@@ -1,7 +1,4 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   &__title {
     @include font(null, 36px, 1.16, 0.03em);
 
@@ -12,7 +9,11 @@
 
   &__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      margin: -15px;
+    }
   }
 
   &__icon {
@@ -26,9 +27,6 @@
   }
 
   &__item {
-    width: 170px;
-    height: 92px;
-    margin-right: 30px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transform: scale(1);
@@ -41,6 +39,21 @@
     &:focus {
       border: 1px solid $accent-color;
       transform: scale(1.25);
+    }
+
+    @media screen and (max-width: 767px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 3 * 30px) / 3);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 6 * 30px) / 6);
+      margin: 15px;
     }
   }
 
