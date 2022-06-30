@@ -676,11 +676,6 @@ body {
   background-size: cover;
 }
 
-@media screen and (min-width: 1200px) {
-  .features {
-    padding-bottom: 0;
-  }
-}
 .features__list {
   display: flex;
   flex-wrap: wrap;
@@ -704,12 +699,13 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__item {
     width: calc((100% - 30px) / 2);
-    margin-right: 15px;
+    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
     width: calc((100% - 30px) / 4);
+    margin: 15px;
   }
 }
 .features__title {
