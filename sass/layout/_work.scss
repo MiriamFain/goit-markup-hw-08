@@ -1,4 +1,8 @@
 .work {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
   &__list {
     position: relative;
     display: flex;

@@ -1,19 +1,33 @@
 .features {
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
 
-    & .features__item {
-      margin-right: $basic-margin;
+    @media screen and (min-width: 768px) {
+      margin: -15px;
+    }
+  }
 
-      & {
-        margin-right: $basic-margin;
-      }
+  &__item {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
 
-    & .item:last-child {
-      margin-right: 0;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 30px) / 2);
+      margin-right: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 30px) / 4);
     }
   }
 
@@ -24,23 +38,35 @@
     color: $title-text-color;
     margin-top: $basic-margin;
     margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__text {
     @include font(null, 14px, 1.71, 0.03em);
-
     color: $text-color;
-    max-width: 270px;
-    min-height: 75px;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+      min-height: 75px;
+      text-align: left;
+    }
   }
 
   &__icon {
-    display: flex;
-    width: 270px;
-    height: 120px;
     background-color: #f5f4fa;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
+    display: flex;
+    height: 120px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }
