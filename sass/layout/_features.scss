@@ -15,9 +15,11 @@
   &__item {
     width: 100%;
 
-    @media screen and (min-width: 480px) {
-      &:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
 
