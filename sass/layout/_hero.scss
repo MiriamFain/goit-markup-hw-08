@@ -1,8 +1,8 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 100%;
+  padding: 118px 0;
   text-align: center;
-  padding: 200px 0;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -13,4 +13,15 @@
     url("../images/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include desktop {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+  }
 }

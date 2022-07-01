@@ -1,5 +1,5 @@
 .features {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-bottom: 0;
   }
 
@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin: -15px;
     }
   }
@@ -23,7 +23,7 @@
       margin-right: 15px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       width: calc((100% - 30px) / 4);
     }
   }
@@ -37,7 +37,7 @@
     margin-bottom: 10px;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       text-align: left;
     }
   }
@@ -46,7 +46,7 @@
     @include font(null, 14px, 1.71, 0.03em);
     color: $text-color;
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       max-width: 270px;
       min-height: 75px;
       text-align: left;
@@ -62,7 +62,7 @@
     height: 120px;
     margin-bottom: 30px;
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       width: 270px;
     }
   }

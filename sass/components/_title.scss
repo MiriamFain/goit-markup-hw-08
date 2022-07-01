@@ -8,8 +8,12 @@
 
 .title--hero {
   margin-bottom: 30px;
-
-  @include font(900, 44px, 1.36, 0.06em);
+  padding-bottom: 0;
+  @include font(900, 26px, 1.61, 0.06em);
   text-transform: uppercase;
   color: $first-contrast-text-color;
+
+  @include desktop {
+    @include font(900, 44px, 1.36, 0.06em);
+  }
 }
