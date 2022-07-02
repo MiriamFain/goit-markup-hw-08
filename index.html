@@ -197,15 +197,26 @@
           <h2 class="title" data-aos="zoom-out">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="item" data-aos="fade-up-right">
-              <img src="./images/img.jpg" alt="верстка" width="376" />
+              <img
+                srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
+                src="./images/img-1.jpg"
+                alt="верстка"
+                width="376"
+              />
               <p class="work__text">Десктопные приложения</p>
             </li>
             <li class="item" data-aos="fade-down">
-              <img src="./images/img-2.jpg" alt="дизайн" width="376" />
+              <img
+                srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
+                src="./images/img-2.jpg"
+                alt="дизайн"
+                width="376"
+              />
               <p class="work__text">Мобильные приложения</p>
             </li>
             <li class="item" data-aos="fade-left">
               <img
+                srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="внешнее оформление"
                 width="376"
@@ -222,11 +233,34 @@
           <ul class="team__list">
             <li class="team__item">
               <div class="item">
-                <img
-                  src="./images/img-5.jpg"
-                  alt="Игорь Демьяненко"
-                  class="team__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team-img-1.jpg    1x,
+                      ./images/team-img-1-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-img-1-tablet.jpg    1x,
+                      ./images/team-img-1-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-img-1-mobile.jpg    1x,
+                      ./images/team-img-1-mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/team-img-1.jpg"
+                    alt="Игорь Демьяненко"
+                    class="team__img"
+                  />
+                </picture>
               </div>
               <div class="team__content">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -264,11 +298,34 @@
             </li>
             <li class="team__item">
               <div class="item">
-                <img
-                  src="./images/img-6.jpg"
-                  alt="Ольга Репина"
-                  class="team__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team-img-2.jpg    1x,
+                      ./images/team-img-2-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-img-2-tablet.jpg    1x,
+                      ./images/team-img-2-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-img-2-mobile.jpg    1x,
+                      ./images/team-img-2-mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/team-img-2.jpg"
+                    alt="Ольга Репина"
+                    class="team__img"
+                  />
+                </picture>
               </div>
               <div class="team__content">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -307,11 +364,34 @@
             </li>
             <li class="team__item">
               <div class="item">
-                <img
-                  src="./images/img-7.jpg"
-                  alt="Николай Тарасов"
-                  class="team__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team-img-3.jpg    1x,
+                      ./images/team-img-3-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-img-3-tablet.jpg    1x,
+                      ./images/team-img-3-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-img-3-mobile.jpg    1x,
+                      ./images/team-img-3-mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/team-img-3.jpg"
+                    alt="Николай Тарасов"
+                    class="team__img"
+                  />
+                </picture>
               </div>
               <div class="team__content">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -349,11 +429,34 @@
             </li>
             <li class="team__item">
               <div class="item">
-                <img
-                  src="./images/img-8.jpg"
-                  alt="Михаил Ермаков"
-                  class="team__img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team-img-4.jpg    1x,
+                      ./images/team-img-4-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-img-4-tablet.jpg    1x,
+                      ./images/team-img-4-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-img-4-mobile.jpg    1x,
+                      ./images/team-img-4-mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/team-img-4.jpg"
+                    alt="Михаил Ермаков"
+                    class="team__img"
+                  />
+                </picture>
               </div>
               <div class="team__content">
                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -437,7 +540,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="footer-content">
@@ -534,7 +637,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
