@@ -3,11 +3,14 @@
 }
 
 .header-contact {
+  display: none;
   display: flex;
   margin-left: auto;
 }
 
 .site-nav {
+  display: none;
+
   & .item {
     margin-right: 50px;
     position: relative;
@@ -72,8 +75,12 @@
   border-radius: 2px;
 }
 
-.header-contact .item + .item {
-  margin-left: 50px;
+.header-contact {
+  display: none;
+
+  & .item + .item {
+    margin-left: 50px;
+  }
 }
 
 .header-contact-link {
