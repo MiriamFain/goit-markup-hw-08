@@ -1,6 +1,8 @@
 .work {
+  display: none;
+
   @include desktop {
-    display: none;
+    display: flex;
   }
 
   &__list {
