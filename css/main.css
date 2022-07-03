@@ -1,4 +1,4 @@
-.footer-form, .header-contact-link, .main-line, .social__link, .form-label-term, .close-modal, .button.form-btn, .button.primary, .header > .container {
+.footer-form, .header-contact-link, .main-line, .social__link, .form-label-term, .close-modal, .button.form-btn, .button.primary {
   display: flex;
   align-items: center;
 }
@@ -182,7 +182,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -201,7 +201,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    margin: 26px 88px 26px 0;
+    margin-right: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -210,7 +210,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin: 24px 93px 24px 0;
+    margin-right: 94px;
   }
 }
 .logo__accent {

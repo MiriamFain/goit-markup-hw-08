@@ -1,9 +1,9 @@
 .header {
   width: 100%;
 
-  > .container {
-    @extend %align-list;
-  }
+  // > .container {
+  //   @extend %align-list;
+  // }
 
   @media screen and (max-width: 767px) {
     padding: 16px 0;

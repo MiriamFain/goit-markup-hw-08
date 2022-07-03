@@ -3,12 +3,12 @@
   @include font(700, 24px, 1.16, 0.03em);
 
   @include tablet {
-    margin: 26px 88px 26px 0;
+    margin-right: 88px;
   }
 
   @include desktop {
     @include font(700, 26px, 1.19, 0.03em);
-    margin: 24px 93px 24px 0;
+    margin-right: 94px;
   }
 
   color: $accent-color;
