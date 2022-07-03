@@ -74,6 +74,10 @@
     color: $text-color;
   }
 
+  .item > .card-content {
+    // flex-grow: 1;
+  }
+
   .card-tumb {
     position: relative;
     overflow: hidden;
@@ -83,6 +87,7 @@
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+    flex-grow: 1;
 
     &-action {
       overflow: hidden;

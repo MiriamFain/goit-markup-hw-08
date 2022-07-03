@@ -1,6 +1,15 @@
 .logo {
   font-family: "Raleway", sans-serif;
-  @include font(700, 24px, 1.42, 0.03em);
+  @include font(700, 24px, 1.16, 0.03em);
+
+  @include tablet {
+    margin: 26px 88px 26px 0;
+  }
+
+  @include desktop {
+    @include font(700, 26px, 1.19, 0.03em);
+    margin: 24px 93px 24px 0;
+  }
 
   color: $accent-color;
 
@@ -10,14 +19,10 @@
 
   &--footer {
     display: block;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
   }
 
   &__accent-footer {
     color: $first-contrast-text-color;
-  }
-
-  @include desktop {
-    margin: 24px 93px 24px 0;
   }
 }

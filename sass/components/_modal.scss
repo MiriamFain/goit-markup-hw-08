@@ -66,6 +66,7 @@
   flex-direction: row-reverse;
   margin-top: 8px;
   margin-right: 8px;
+  cursor: pointer;
 
   @extend %align-list;
   justify-content: center;

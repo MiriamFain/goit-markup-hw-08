@@ -33,6 +33,11 @@
   }
 }
 
+.menu-close-btn {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
 .mob-menu {
   position: fixed;
   top: 0;
@@ -49,9 +54,9 @@
     height: 100%;
     overflow-y: auto;
   }
-  // opacity: 0;
-  // transform: translateX(100%);
-  // transition-property: transform, opacity;
+  // opacity: 1;
+
+  // transition-property: opacity;
   // transition-duration: 250ms;
   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
