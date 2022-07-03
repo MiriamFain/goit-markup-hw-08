@@ -199,17 +199,10 @@ body {
   letter-spacing: 0.03em;
   color: rgb(33, 150, 243);
 }
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .logo {
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     margin-right: 94px;
   }
 }
@@ -724,6 +717,10 @@ body {
   fill: rgb(255, 255, 255);
 }
 
+.main-line {
+  justify-content: space-between;
+}
+
 .site-nav {
   display: none;
 }
@@ -799,8 +796,8 @@ body {
 }
 .header-contact-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: rgb(117, 117, 117);
   transition-property: color, fill;
@@ -817,7 +814,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header-contact-link {
-    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
     display: flex;
     align-items: center;
     justify-content: center;

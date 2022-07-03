@@ -1,5 +1,6 @@
 .main-line {
   @extend %align-list;
+  justify-content: space-between;
 }
 
 .site-nav {
@@ -97,7 +98,7 @@
 .header-contact-link {
   @extend %align-list;
 
-  @include font(500, 14px, 1.14, 0.02em);
+  @include font(500, 12px, 1.16, 0.02em);
   color: $text-color;
 
   transition-property: color, fill;
@@ -117,7 +118,7 @@
   }
 
   @include desktop {
-    margin-bottom: 10px;
+    @include font(null, 14px, 1.14, null);
     display: flex;
     align-items: center;
     justify-content: center;
