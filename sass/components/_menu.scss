@@ -1,11 +1,19 @@
 .header {
-  position: absolute;
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 16px 0;
   > .container {
     @extend %align-list;
   }
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: inherit;
 }
 
 .menu-open-btn,
@@ -32,8 +40,8 @@
   z-index: 1;
   background-color: #fff;
   width: 100vw;
-  height: 100vw;
-  padding: 48px 40px;
+  height: 100vh;
+  // padding: 48px 40px;
   .container {
     display: flex;
     flex-direction: column;
