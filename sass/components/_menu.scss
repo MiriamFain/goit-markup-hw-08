@@ -76,10 +76,13 @@
   margin-top: 60px;
   margin-bottom: 64px;
 
+  &-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
   & .mob-tel {
     @include font(500, 34px, 1.08, 0.02em);
     color: $accent-color;
-    margin-bottom: 32px;
   }
 
   & .mob-mail {

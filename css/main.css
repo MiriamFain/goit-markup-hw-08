@@ -296,13 +296,15 @@ body {
   margin-top: 60px;
   margin-bottom: 64px;
 }
+.mob-contact-item:not(:last-child) {
+  margin-bottom: 32px;
+}
 .mob-contact .mob-tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.08;
   letter-spacing: 0.02em;
   color: rgb(33, 150, 243);
-  margin-bottom: 32px;
 }
 .mob-contact .mob-mail {
   font-weight: 500;
@@ -786,6 +788,9 @@ body {
     margin-left: auto;
   }
 }
+.header-contact .item:not(:last-child) {
+  margin-bottom: 10px;
+}
 
 @media screen and (min-width: 1200px) {
   .header-contact .item + .item {
@@ -820,9 +825,8 @@ body {
     line-height: 1.14;
   }
 }
-
-.envelope-icon,
-.smartphone-icon {
+.header-contact-link .envelope-icon,
+.header-contact-link .smartphone-icon {
   margin-right: 10px;
   justify-content: center;
   fill: rgb(117, 117, 117);
@@ -1097,6 +1101,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .gallery-list {
