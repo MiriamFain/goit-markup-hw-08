@@ -380,7 +380,6 @@ body {
 }
 
 .logo {
-  margin: 24px 93px 24px 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -392,11 +391,16 @@ body {
   color: rgb(33, 33, 33);
 }
 .logo--footer {
-  margin-bottom: 20px;
   display: block;
+  margin-bottom: 20px;
 }
 .logo__accent-footer {
   color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin: 24px 93px 24px 0;
+  }
 }
 
 .social {
@@ -658,10 +662,26 @@ body {
 }
 
 .footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  text-align: center;
+  padding-top: 60px;
 }
+@media screen and (max-width: 1199px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    padding-top: 0;
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
+}
+
 .footer-address {
   font-style: normal;
   font-size: 14px;
@@ -702,8 +722,10 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-social-content {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-social-content {
+    margin-left: 70px;
+  }
 }
 
 .footer-form-input {
@@ -720,16 +742,43 @@ body {
   transition-duration: 250ms;
   transition-timing-function: 0.4, 0, 0.2, 1;
 }
+@media screen and (max-width: 1199px) {
+  .footer-form-input {
+    margin: 0 0 20px;
+  }
+}
 
-.footer-email {
-  margin-left: 95px;
+@media screen and (min-width: 1200px) {
+  .footer-email {
+    margin-left: 95px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    flex-direction: column;
+  }
 }
 
 .footer-btn {
-  margin-left: 12px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .footer-btn {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-btn {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-btn {
+    display: inline-flex;
+    margin-left: 12px;
+  }
 }
 
 .icon-send {
