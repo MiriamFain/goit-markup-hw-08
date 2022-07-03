@@ -471,14 +471,14 @@ body {
   .site-nav {
     display: flex;
   }
-  .site-nav .item {
+  .site-nav .item:not(:last-child) {
     margin-right: 50px;
     position: relative;
   }
-  .site-nav .item:last-child {
+  .site-nav .item:not(:last-child):last-child {
     margin-right: 84px;
   }
-  .site-nav .item::after {
+  .site-nav .item:not(:last-child)::after {
     opacity: 0;
     transition-property: opacity;
     transition-duration: 250ms;
@@ -726,43 +726,55 @@ body {
 .gallery-list > .item {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .gallery-list > .item {
     width: calc((100% - 60px) / 2);
   }
 }
-.gallery-list > .item .item:hover, .gallery-list > .item .item:focus {
+.gallery-list .item:hover,
+.gallery-list .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: 250ms;
 }
-.gallery-list .image-title {
+
+.image-title {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: rgb(33, 33, 33);
 }
-.gallery-list .image-text {
+
+.image-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
 }
-.gallery-list .card {
-  flex-grow: 1;
+
+.gallery-list.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.gallery-list .card-tumb {
+
+.card-tumb {
   position: relative;
   overflow: hidden;
 }
-.gallery-list .card-content {
+
+.card-content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
   flex-grow: 1;
 }
-.gallery-list .card-content-action {
+
+.card-content-action {
   overflow: hidden;
   display: flex;
   position: absolute;
@@ -782,10 +794,13 @@ body {
   transition-duration: 250ms;
   transition-timing-function: 0.4, 0, 0.2, 1;
 }
-.item:hover .gallery-list .card-content-action, .item:focus .gallery-list .card-content-action {
+
+.item:hover .card-content-action,
+.item:focus .card-content-action {
   opacity: 1;
   transform: translateY(0);
 }
+
 @media screen and (max-width: 767px) {
   .gallery-list .button-list {
     justify-content: left;
