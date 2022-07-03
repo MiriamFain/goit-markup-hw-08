@@ -75,6 +75,7 @@
 .mob-contact {
   margin-top: 60px;
   margin-bottom: 64px;
+
   & .mob-tel {
     @include font(500, 34px, 1.08, 0.02em);
     color: $accent-color;
@@ -84,7 +85,6 @@
   & .mob-mail {
     @include font(500, 24px, 1.16, 0.02em);
     color: $text-color;
-    margin-bottom: 32px;
   }
 }
 

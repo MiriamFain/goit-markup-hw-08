@@ -51,10 +51,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   padding: 6px 22px;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 15px;
-  }
 }
 
 .button-list .current-btn,
@@ -67,8 +63,8 @@
   transition: 250ms;
 }
 
-.button-list .btn + .btn {
-  margin-left: 8px;
+.button-list {
+  gap: 15px 8px;
 }
 
 .button.form-btn {

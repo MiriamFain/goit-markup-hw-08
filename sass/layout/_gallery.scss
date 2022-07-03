@@ -74,9 +74,9 @@
     color: $text-color;
   }
 
-  // .item > .card-content {
-  //   // flex-grow: 1;
-  // }
+  .card {
+    flex-grow: 1;
+  }
 
   .card-tumb {
     position: relative;

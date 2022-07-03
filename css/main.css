@@ -310,7 +310,6 @@ body {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: rgb(117, 117, 117);
-  margin-bottom: 32px;
 }
 
 .mob-soc-list {
@@ -422,11 +421,6 @@ body {
   letter-spacing: 0.03em;
   padding: 6px 22px;
 }
-@media screen and (max-width: 767px) {
-  .button.secondary {
-    margin-bottom: 15px;
-  }
-}
 
 .button-list .current-btn,
 .button.secondary:hover,
@@ -437,8 +431,8 @@ body {
   transition: 250ms;
 }
 
-.button-list .btn + .btn {
-  margin-left: 8px;
+.button-list {
+  gap: 15px 8px;
 }
 
 .button.form-btn {
@@ -818,6 +812,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header-contact-link {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1143,6 +1138,9 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
+}
+.gallery-list .card {
+  flex-grow: 1;
 }
 .gallery-list .card-tumb {
   position: relative;
