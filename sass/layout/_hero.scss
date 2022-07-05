@@ -15,7 +15,7 @@
   background-size: cover;
   background-position: center;
 
-  @media retina {
+  @include retina {
     background-image: url("../images/mobile-bg-img-2x.jpg");
   }
 
@@ -31,7 +31,7 @@
     background-position: center;
     width: 100%;
 
-    @media retina {
+    @include retina {
       background-image: url("../images/tablet-bg-img-2x.jpg");
     }
   }
@@ -50,7 +50,7 @@
     height: 600px;
     padding: 200px 0;
 
-    @media retina {
+    @include retina {
       background-image: url("../images/bg-img-2x.jpg");
     }
   }
