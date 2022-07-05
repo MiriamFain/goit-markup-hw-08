@@ -32,8 +32,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  max-width: 450px;
-  max-height: 609px;
+  @include mobile {
+    max-width: 450px;
+    max-height: 609px;
+  }
 
   @include desktop {
     position: absolute;
