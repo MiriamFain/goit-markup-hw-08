@@ -1130,9 +1130,6 @@ body {
 .gallery-list > .item {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .gallery-list > .item {
@@ -1160,13 +1157,10 @@ body {
   color: rgb(117, 117, 117);
 }
 
-.gallery-list .card {
-  height: 100%;
-}
-
-.gallery-list .item {
+.card {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .card-tumb {
@@ -1174,14 +1168,11 @@ body {
   overflow: hidden;
 }
 
-.card-content:first-child {
-  flex-grow: 1;
-}
-
 .card-content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }
 
 .card-content-action {

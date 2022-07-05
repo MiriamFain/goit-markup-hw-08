@@ -27,9 +27,6 @@
 .gallery-list > .item {
   overflow: hidden;
   background-color: $primary-bg-color;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 
   // margin-right: 15px;
   // margin-left: 15px;
@@ -80,7 +77,13 @@
   color: $text-color;
 }
 
-.gallery-list .card {
+// .gallery-list .card {
+//   height: 100%;
+// }
+
+.card {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -89,24 +92,20 @@
 //   flex-direction: column;
 // }
 
-.gallery-list .item {
-  display: flex;
-  flex-direction: column;
-}
-
 .card-tumb {
   position: relative;
   overflow: hidden;
 }
 
-.card-content:first-child {
-  flex-grow: 1;
-}
+// .card-content:first-child {
+//   flex-grow: 1;
+// }
 
 .card-content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }
 
 .card-content-action {
