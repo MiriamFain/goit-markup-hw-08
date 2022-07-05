@@ -73,13 +73,8 @@
 
 .image-text {
   @include font(null, 16px, 1.87, 0.03em);
-
   color: $text-color;
 }
-
-// .gallery-list .card {
-//   height: 100%;
-// }
 
 .card {
   display: flex;
@@ -87,19 +82,10 @@
   height: 100%;
 }
 
-// .gallery-list .item {
-//   display: flex;
-//   flex-direction: column;
-// }
-
 .card-tumb {
   position: relative;
   overflow: hidden;
 }
-
-// .card-content:first-child {
-//   flex-grow: 1;
-// }
 
 .card-content {
   padding: 20px 24px;
