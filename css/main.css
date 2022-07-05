@@ -448,7 +448,6 @@ body {
   height: 100%;
   left: 0px;
   top: 0px;
-  overflow-y: scroll;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition-property: opacity;
@@ -466,6 +465,7 @@ body {
 }
 
 .modal {
+  overflow-y: scroll;
   display: flex;
   justify-content: flex-end;
   position: absolute;
